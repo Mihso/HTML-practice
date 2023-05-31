@@ -2,6 +2,8 @@ body {
 background-color: lightblue;
 align-content: center;
 font-size: 50px;
+align-self: center;
+max-width: 200px;
 }
 button {
 background-color: chocolate;
@@ -19,7 +21,6 @@ border-color: black;
     border-color: teal;
     border-spacing: 2px;
     padding: 4px;
-    word-wrap: normal;
     border-radius: 4px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
