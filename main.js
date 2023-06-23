@@ -1,17 +1,43 @@
-let value = 0
-let amount = 1
+let value = ""
+let amount = 0
+document.getElementById("sign").innerHTML = ""
 function tester(){
-    value += amount
-    return(value)
+    value = document.getElementById("sign").innerHTML
+    console.log(value)
+    if(value == "+"){
+        amount = Number(document.getElementById("number1").value) + Number(document.getElementById("number2").value);
+    }
+    else if(value == "-"){
+        amount = Number(document.getElementById("number1").value) - Number(document.getElementById("number2").value);
+    }
+    else if(value == "x"){
+        amount = Number(document.getElementById("number1").value) * Number(document.getElementById("number2").value);
+    }
+    else if(value == "/"){
+        amount = Number(document.getElementById("number1").value) / Number(document.getElementById("number2").value);
+    }
+    else{
+        return(0)
+    }
+    console.log(amount)
+    return amount;
 }
 function amounter(){
     return amount
 }
 function add(){
-    amount += 1
-    return amount
+    document.getElementById("sign").innerHTML = "+"
+    console.log(document.getElementById("sign").innerHTML);
 }
 function subtract(){
-    amount -= 1
-    return amount
+    document.getElementById("sign").innerHTML = "-"
+    console.log(document.getElementById("sign").innerHTML);
+}
+function multiply(){
+    document.getElementById("sign").innerHTML = "x"
+    console.log(document.getElementById("sign").innerHTML);
+}
+function divide(){
+    document.getElementById("sign").innerHTML = "/"
+    console.log(document.getElementById("sign").innerHTML);
 }
