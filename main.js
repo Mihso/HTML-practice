@@ -1,6 +1,10 @@
-let value = ""
-let amount = 0
-document.getElementById("sign").innerHTML = ""
+let value = "";
+let amount = 0;
+data = [];
+let record = document.getElementById("table");
+
+document.getElementById("sign").innerHTML = "+"
+console.log(data)
 function tester(){
     value = document.getElementById("sign").innerHTML
     console.log(value)
@@ -19,7 +23,10 @@ function tester(){
     else{
         return(0)
     }
-    console.log(amount)
+    data.push(amount);
+    var li = document.createElement('li');
+    li.innerText = amount;
+    record.appendChild(li);
     return amount;
 }
 function amounter(){
