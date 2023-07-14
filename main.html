@@ -7,8 +7,8 @@
 <body>
     <header>HELLO</header>
     <main>
-        <p style="font-size: 24px;">Previous amounts</p>
-        <table style = "border-collapse: collapse;"class="fancy">
+        <p style="font-size: 24px;margin-bottom: 24px;">Previous amounts</p>
+        <table class="fancy">
             <thead>
                 <th>equation</th>
                 <th>amount</th>
@@ -16,11 +16,12 @@
             <tbody id="table">
             </tbody>
         </table>
-        <div class ="fancy">
+        <div class ="fancy" style="margin-top: 24px; margin-bottom: 12px;">
             How are you doing.
         </div>
+        <div style="border:solid; border-color: black; border-width: 5px; max-width: 75%; margin: auto;">
         <input type="number" id="number1">
-        <text id="sign"></text>
+        <text style ="font-size: 24px;" id="sign"></text>
         <input type="number" id="number2">
         <div></div>
         <button type="button" onclick="add()">add</button>
@@ -30,6 +31,7 @@
         <div></div>
         <button type="button" onclick="document.getElementById('tester').innerHTML = tester()">calculate</button>
         <p id="tester"></p>
+        </div>
     </main>
     <a href="home.html">back</a>
     <script src="main.js"></script>
